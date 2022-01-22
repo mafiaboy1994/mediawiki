@@ -1,4 +1,4 @@
-# MediaWiki Azure deplopyment
+#MediaWiki Azure deplopyment
 
 This is a readme for MediaWiki Azure deployment
 
