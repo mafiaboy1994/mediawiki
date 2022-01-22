@@ -5,9 +5,9 @@ This is a readme for MediaWiki Azure deployment
 ## Pre-Req
 
 Install the following:
-Linux OR WSL (Windows Sub-Linux)
-GIT
-PHP
+* Linux OR WSL (Windows Sub-Linux)
+* GIT
+* PHP
 
 
 
