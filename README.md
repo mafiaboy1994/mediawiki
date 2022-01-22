@@ -1,8 +1,8 @@
-#MediaWiki Azure deplopyment
+# MediaWiki Azure deplopyment
 
 This is a readme for MediaWiki Azure deployment
 
-#Pre-Req
+## Pre-Req
 
 Install the following:
 Linux OR WSL (Windows Sub-Linux)
@@ -12,7 +12,7 @@ PHP
 
 
 
-#Download Source Files
+## Download Source Files
 
 1. Download Source files from mediawiki's website - https://www.mediawiki.org/wiki/Download
 2. Extract ZIP in WSL Environment into a mediawiki folder
@@ -21,7 +21,7 @@ PHP
 cd mediawiki
 ```
 
-#Git Repo
+## Git Repo
 1. Create Repo for storing files for commits, pull & push etc
 2. Initalize a new repo from an exsisting project, in my case the mediawiki source files downloaded in the previous step in the mediawiki folder
 ```bash
@@ -51,7 +51,7 @@ git remote -v
 git push origin main
 ```
 
-#Azure Resources setup
+## Azure Resources setup
 Now we have the local repo pushed to github. We now need to push this to Azure.
 However before we do that we will need to setup the Azure resources, which include:
 * Resource Group for all the resources
@@ -96,7 +96,7 @@ Make sure to remember what password you use, as well as taking a note of the URL
 
 
 
-#Pushing git to Azure
+## Pushing git to Azure
 Now we've deployed the resources, we will need to push the local repo to the Azure web app
 
 1. Set the default deployment branch for the App Service App to 'main'
@@ -155,7 +155,7 @@ php -i | grep apc
 That's it for facilitating the media wiki install
 
 
-#Installing MediaWIki
+## Installing MediaWIki
 Simply navigate to your public URL for the web app and specify the Database host which is the URL shown on your MySQL resource and the username and password you specified when you created the MySQL for Azure resource.
 You may have issues connecting the DB due to MySQL SSL connection requirements.
 You can turn off this in the server parameters for testing as MediaWiki doesn't support SSL MySQL connections out of the box. However you can modify it to allow this, which I will add to this repo in due course
