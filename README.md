@@ -114,7 +114,7 @@ git push azure main
 This may take a while!
 
 
-#Extensions Required
+## Extensions Required
 I had to add the following Application settings and ini configurations for installing APCU
 
 1. Add the following Application setting to point to the INI file we will create for APCU which is caching for mediawiki
